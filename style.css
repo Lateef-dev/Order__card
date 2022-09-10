@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('RedHatDisplay-VariableFont_wght.ttf');
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 1rem -25rem;
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    width: 27%;
+    height: 77vh;
+    background-color: #ffffff;
+    margin: 5rem auto;
+    border-radius: 1rem;
+    box-shadow: .1rem 1rem .9rem rgba(0, 0, 0, .05);
+}
+
+.container__upper {
+    background-image: url("images/illustration-hero.svg");
+    height: 33.33333%;
+    background-size: cover;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.container__lower {
+    margin: 3rem 3rem;
+    text-align: center;
+}
+
+.container__lower--order {
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 1rem;
+}
+
+.container__lower--paragraph {
+    color: hsl(224, 23%, 55%);
+    padding-bottom: 2rem;
+}
+
+.container__plan {
+    width: 100%;
+    margin: 0 auto;
+    background-color: hsl(224, 23%, 55%, .07);
+    text-align: center;
+    height: 7rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+}
+
+.icon-music {
+    float: left;
+    margin: 1rem 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.annual__plan {
+    width: 40%;
+    float: left;
+    margin: 1.4rem 0 1rem 0;
+}
+
+.annual__plan--text {
+    padding-bottom: .5rem;
+}
+
+.plan__change {
+    float: right;
+    margin-top: 2.3rem;
+    padding-right: 1rem;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan__change:hover,
+.plan__change:active {
+    text-decoration: none;
+}
+
+
+.payment__button--link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding-top: 1rem;
+    width: 100%;
+    height: 4rem;
+    background-color: hsl(245, 75%, 52%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: .1rem 1rem .5rem rgba(0, 0, 0, .05);
+}
+
+.order__annul--link {
+    padding-top: 2rem;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 750;
+    font-size: 1.2rem;
+}
+
+.order__annul--link:hover,
+.order__annul--link:active {
+    color: hsl(228, 45%, 44%);
+}
+
+.footer__attribution {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: -3rem;
+
+}
+
+.link {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+    display: inline-block;
+    transition: all .2s ease-in;
+}
+
+.link:hover {
+    color: hsl(225, 100%, 94%);
+    background-color: hsl(228, 45%, 44%);
+    transform: translateX(7%) scale(1.1);
+}
+
+
+@media (min-width: 112.5rem) {
+    html {
+        font-size: 65%;
+    }
+
+    .container {
+        width: 28%;
+    }
+}
+
+
+@media (max-width: 66.5em) {
+    html {
+        font-size: 61%;
+    }
+
+    .container {
+        width: 35%;
+    }
+}
+
+@media (max-width: 58.125em) {
+    html {
+        font-size: 58%;
+    }
+
+    .container__plan {
+        height: 8rem;
+        font-size: 1.1rem;
+    }
+
+    .icon-music {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .order__annul--link {
+        padding-top: 1rem;
+    }
+
+}
+
+@media (max-width: 48.75em) {
+    html {
+        font-size: 54%;
+    }
+}
+
+@media (max-width: 40.625em) {
+    html {
+        font-size: 52%;
+    }
+
+    .container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 32.8125em) {
+    .container {
+        width: 50%;
+    }
+
+    .container__plan {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        margin-top: 4rem;
+        width: 65%;
+        height: 70vh;
+    }
+
+    .container__plan {
+        height: 8rem;
+        font-size: 1.2rem;
+    }
+
+    .payment__button--link {
+        padding-top: .5rem;
+        width: 90%;
+        height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .order__annul--link {
+        padding-top: 2rem;
+        font-weight: 750;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 21.5em) {
+    .container {
+        width: 80%;
+        height: 65vh;
+    }
+}
+
+@media (max-width: 17.5em) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+
+    .container {
+        width: 90%;
+        height: 60vh;
+        margin: 5rem auto;
+    }
+
+    .container__plan {
+        width: 100%;
+        border-radius: .5rem;
+    }
+
+    .icon-music {
+        margin: .6rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+}
